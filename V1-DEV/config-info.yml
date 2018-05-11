@@ -1,0 +1,6 @@
+
+# 将注册信息放在远程上面， 这样可以动态的切换环境
+eureka:
+  client:
+    service-url:
+           defaultZone: http://localhost:9871/eureka
