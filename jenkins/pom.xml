@@ -17,5 +17,18 @@
   </dependencies>
   <build>
     <finalName>jenkins</finalName>
+	 <plugins>
+      <plugin>
+      <groupId>org.apache.tomcat.maven</groupId>
+      <artifactId>tomcat7-maven-plugin</artifactId>
+      <configuration>
+      <url>http://localhost:8081/manager/text</url>
+        <path>/</path>
+      <server>tomcat</server>
+      <username>admin</username>
+      <password>2150ff72d6b240b39b9277d90ea24765</password>
+      </configuration>
+      </plugin>
+    </plugins>
   </build>
 </project>
